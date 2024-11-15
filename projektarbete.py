@@ -53,8 +53,8 @@ def dekryptera_fil(filnamn, key): #Funktionen för att dekryptera en fil
 
 def main(): #Huvud menyn funktion för användandet av argparse
     cool_text = pyfiglet.figlet_format("Mitt\n" "krypterings\nverktyg", font="slant")
-    parser = argparse.ArgumentParser( # En tydlig beskrivining av hur du använder dig av programmet.
-    
+    # En tydlig beskrivining av hur du använder dig av programmet.
+    parser = argparse.ArgumentParser( 
     description=(
         f"{cool_text}.\n\n"
         "Metoder:\n\n"
@@ -65,7 +65,7 @@ def main(): #Huvud menyn funktion för användandet av argparse
         "Exempel för metoder:\n\n"
         "  python projektarbete.py generera-nyckel\n"
         "  python projektarbete.py 'filnamn' kryptera\n"
-        "  python projektarbete.py 'filnamn dekryptera\n\n"
+        "  python projektarbete.py 'filnamn' dekryptera\n\n"
         "Notera: Det är antingen 'python' eller 'python3' baserat på vilket OS-system du använder dig av.\n\n"
     ),
     formatter_class=argparse.RawTextHelpFormatter # Formaterar texten så inta allting blir i en enda sträng
